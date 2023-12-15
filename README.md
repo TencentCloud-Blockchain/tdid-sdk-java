@@ -1,10 +1,15 @@
+<p align="center">
+<a href="https://cloud.tencent.com/"><img src="https://imgcache.qq.com/qcloud/tcloud_dtc/static/static_source_business/eec00e38-a178-479f-83d4-853a18575ac4.png" height="100" ></a>
+</p>
+<h1 align="center">TDID Tencent Cloud SDK DEMO for java</h1>
+
 # 简介
-欢迎使用腾讯云TDID API接口DEMO用例。本示例使用腾讯云开发者工具套件（SDK），此 SDK 是云 API 3.0 平台的配套开发工具。
+欢迎使用腾讯云TDID API接口DEMO用例。本示例代码依赖腾讯云开发者工具套件（SDK），此 SDK 是云 API 3.0 平台的配套开发工具。
 源码地址：https://github.com/tencentcloud/tencentcloud-sdk-java
 
 # 依赖环境
 1. 依赖环境：JDK 7 版本及以上。
-2. 获取 SecretID、SecretKey 以及调用地址（endpoint），endpoint 一般形式为\*.tencentcloudapi.com，调用地址为 tdid.tencentcloudapi.com。
+2. 获取 SecretID、SecretKey 以及调用地址（endpoint），endpoint 调用地址为 tdid.tencentcloudapi.com。
 
 # 获取安装
 安装 Java SDK 前,先获取安全凭证。在第一次使用云API之前，用户首先需要在腾讯云控制台上申请安全凭证，安全凭证包括 SecretID 和 SecretKey，SecretID 是用于标识 API 调用者的身份，SecretKey 是用于加密签名字符串和服务器端验证签名字符串的密钥 SecretKey 必须严格保管，避免泄露。您也可以前往[从零开始使用腾讯云 Java SDK ](https://cloud.tencent.com/developer/article/1839228)界面查看更为基础和详细的 Java SDK 的安装和使用说明。
@@ -23,10 +28,10 @@
     <artifactId>tencentcloud-sdk-java</artifactId>
     <!-- go to https://search.maven.org/search?q=tencentcloud-sdk-java and get the latest version. -->
     <!-- 请到https://search.maven.org/search?q=tencentcloud-sdk-java查询所有版本，最新版本如下 -->
-    <version>3.1.711</version>
+    <version>3.1.894</version>
 </dependency>
 ```
-1. 如上引用方式会将腾讯云所有产品sdk下载到本地，可以将artifactId换成tencentcloud-sdk-java-tdid即可引用，代码中使用方式和大包相同，可参考示例。最新版本也可在[Maven仓库](https://search.maven.org/search?q=tencentcloud-sdk-java)查询，可大大节省存储空间。
+1. 如上引用方式会将腾讯云所有产品sdk下载到本地，可以将artifactId换成tencentcloud-sdk-java-tdid仅引用tdid的sdk，代码中使用方式和大包相同，可参考示例。最新版本也可在[Maven仓库](https://search.maven.org/search?q=tencentcloud-sdk-java)查询，可大大节省存储空间。
 2. 中国大陆地区的用户可以使用镜像源加速下载，编辑 maven 的 settings.xml 配置文件，在 mirrors 段落增加镜像配置：
 ```
     <mirror>
@@ -43,7 +48,7 @@
 3. 需要将vendor目录下的jar包放在java的可找到的路径中；
 4. 引用方法可参考示例。
 
-# Demo
+# Demo单元测试用例
 
-TDIDDemo目录下是完整的TDID API接口调用单元测试用例，业务可参考相关代码进行编码。
-TDIDDemo/src/main/java/com/tencentcloudapi目录下为tdid tencentcloud-sdk-java的源码，从https://github.com/tencentcloud/tencentcloud-sdk-java下载最新版本替换到该目录下
+TDIDDemo目录下是TDID API接口调用单元测试用例示例，业务可参考相关代码进行编码。
+TDIDDemo/src/main/java/com/tencentcloudapi的目录下为通过源码包安装方式安装的tdid tencentcloud-sdk-java源码
